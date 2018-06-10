@@ -1,10 +1,13 @@
+//const path =require('path');
+const express= require("express");
+const app=express();
 class openHomeController{
 
     static getHome(req,res)
     {
       let articles= require('../models/article.js');
       const  path='E:/Express-Boilerplate-BoilerPlate/views/index.pug';
-      console.log("inside getHome.js controllers")
+    console.log("inside getHome.js controllers")
       articles.find({}, function(err, results){
         console.log("level1 pass")
         if(err)

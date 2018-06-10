@@ -65,7 +65,7 @@ table
       td 
         form(action="http://localhost:8002/delete/"+article._id, method='POST', id="form1")
         //input(type='text', name='_method', value='DELETE', hidden='')
-        button(type='submit',form="form1") Delete
+        button(type='submit',form="form1",onclick="return confirm('Are you sure?')") Delete
         
       
 

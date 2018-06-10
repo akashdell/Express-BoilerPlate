@@ -8,7 +8,7 @@ const initRoutes = (app) => {
     app.use('/articles', initArticles()); 
     app.use('/insert', initArticles()); 
     app.use('/delete',initArticles());
-   
+    
    
 }
 
